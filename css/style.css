@@ -1471,7 +1471,8 @@ footer {
     display: grid;
     grid-template-areas:
       "img img"
-      "uno dos"
+      "uno uno"
+      "dos dos"
 
 
     ;
@@ -1500,12 +1501,13 @@ footer {
 
   .formPadre img {
     width: 40vw;
-    transform: translate(25vw);
+    transform: translate(22vw);
   }
 
   .formHijo label {
     font-weight: bolder;
     font-size: 4vw;
+    width: 30vw;
   }
 
   .uni {
@@ -1516,16 +1518,27 @@ footer {
     border: none;
   }
 
-
-
-  .formHijo {
+  .fondoUno{
     background-color: #432818;
-    width: 40vw;
+    width: 80vw;
+    height: 40vh;
     padding: 1vw;
     color: #000;
     border-radius: 1vw;
     margin: 0.5vw;
     margin-bottom: 11vh;
+  }
+
+  .fondoDos{
+    background-color: #432818;
+    width: 80vw;
+    height: 60vh;
+    padding: 1vw;
+    color: #000;
+    border-radius: 1vw;
+    margin: 0.5vw;
+    margin-bottom: 11vh;
+
   }
 
   .formHijo input {
@@ -1540,15 +1553,15 @@ footer {
 
 
   .uno .uni {
-    margin: 1vh 0px 0vw 1vw;
+    margin: 1vh 0vw 0vh 1vw;
   }
 
   .uno a {
     display: inline-block;
     text-decoration: none;
     color: #5177ba;
-    margin-top: 3.2vh;
-    margin-left: 7.8vw;
+    margin-top: 11vh;
+    margin-left: 0vw;
     font-size: 4vw;
     font-weight: bold;
   }
@@ -1573,8 +1586,9 @@ footer {
 
   .flexPadre {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-evenly;
+    align-items: center;
     margin: 0.5vh;
   }
 
