@@ -50,7 +50,7 @@ ul {
 }
 
 .menuPrincipal {
-  background-color: #432818;
+  background: linear-gradient(to right, #432818, #967055);
   outline: #000 .2vw solid;
 }
 
