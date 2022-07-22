@@ -71,6 +71,7 @@ ul {
   font-size: 1vw;
 }
 
+
 .navHijos,
 .navHijos input {
   color: #000;
@@ -90,12 +91,23 @@ ul {
   width: 30vw;
 }
 
-.imagen img {
+.imagen{
   width: 8vw;
+  transition: all 1s;
+}
+
+.imagen:hover{
+  width: 9vw;
 }
 
 .imag {
   width: 3vw;
+  transition: all 1s;
+}
+
+.imag:hover{
+  width: 4vw;
+
 }
 
 .encabezado {
@@ -196,9 +208,9 @@ footer {
 .gridMenu{
   display: grid;
   grid-template-areas:
-  "heaMenu heaMenu heaMenu"
-  "maiMenu maiMenu maiMenu"
-  "fooMenu fooMenu fooMenu"
+  "heaMenu"
+  "maiMenu"
+  "fooMenu"
   
   
   ;
@@ -354,6 +366,15 @@ footer {
 .registro {
   font-size: 1.25vw;
   font-weight: bolder;
+  transition: all 0.5s;
+}
+
+.registro:hover{
+  background-color: #000;
+  color: #fff;
+  padding: 0.5vw;
+
+
 }
 
 
@@ -419,6 +440,58 @@ footer {
 
 }
 
+.animacionMenu{
+  background-color: #cdae98;
+  transition: all 0.5s;
+
+}
+
+.animacionMenu:hover{
+  background-color: #000;
+  color: #fff;
+  padding: 1vw;
+  border-radius: 3vw;
+}
+.animacionBuscar{
+  background-color: #cdae98;
+  transition: all 0.5s;
+}
+
+
+/* .navMenu{
+  display: inline-block;
+  background-color: #432818;
+  transition: all 0.5s;
+  
+}
+
+.navHijos:hover{
+  background: #000;
+  color: #fff;
+
+} */
+
+.animacioncata{
+  width: 15vw;
+  transition: all 1.5s;
+}
+
+.animacioncata:hover{
+  width: 16.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:1024px){
   .gridPadre {
     display: grid;
@@ -470,11 +543,11 @@ footer {
     border: none;
   }
 
-  .imagen img {
+  .imagen {
     width: 15vw;
   }
 
-  .imag img {
+  .imag {
     width: 7vw;
   }
 
@@ -853,11 +926,11 @@ footer {
     border: none;
   }
 
-  .imagen img {
+  .imagen {
     width: 15vw;
   }
 
-  .imag img {
+  .imag{
     width: 7vw;
   }
 
@@ -1225,6 +1298,13 @@ footer {
   .menuCarrito{
     transform: translate(0vw, -1vh);
   }
+  .imagen {
+    width: 20vw;
+  }
+
+  .imag {
+    width: 7vw;
+  }
 
 
 
@@ -1282,11 +1362,11 @@ footer {
     border: none;
   }
 
-  .imagen img {
+  .imagen  {
     width: 20vw;
   }
 
-  .imag img {
+  .imag {
     width: 10vw;
   }
 
