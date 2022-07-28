@@ -7,259 +7,551 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shango Coffe®</title>
     <link rel="icon" href="../img/logo.png">
-    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
-<body class="gridMenu">
+<body>
     <header>
-        <nav class="menuFlex menuPrincipal">
-            <div>
-                <ul class="navPrincipal">
-                    <li class="navHijos">
-                        <h1>Shango Coffe®</h1>
-                    </li>
-                    <li class="navHijos navegador"><input type="search" /></li>
-                    <li><input type="button" value="Buscar" class="navHijos animacionMenu"/></li>
-                    <li class="indx">
-                        <a href="../index.html"><img src="../img/logo.png" alt="inicio" class="imagen" /></a>
-                    </li>
-                    <li><a href="menu.html" class="navHijos nav animacionMenu">Menu</a></li>
-                    <li><a href="ubicacion.html" class="navHijos nav animacionMenu">Ubicacion</a></li>
-                    <li><a href="cuenta.html" class="navHijos nav animacionMenu">Cuenta</a></li>
-                    <li class=" nav menuCarrito"><a href="carrito.html"><img src="../img/carrito-de-compra.png"
-                                alt="carrito de compra" class="imag" /></a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg padMenu">
+            <div class="container-fluid menuColor ">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2 navBuscar " type="search" placeholder="Buscar"
+                            aria-label="Search">
+                        <button class="aniMenu" type="submit">Buscar</button>
+                    </form>
+                    <ul class="navbar-nav  ms-auto  mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link modMenu " aria-current="page" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link modMenu" href="ubicacion.html">Ubicacion</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link modMenu" href="cuenta.html">
+                                Cuenta
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="carrito.html"><img src="../img/carrito-de-compra.png" alt=""
+                                    class="aniCAr"></a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </nav>
-        </div>
     </header>
-    <main class="maiMenu">
-    <div class="catalogo">
-        <div class="padreCatalogo">
-            <ul>
-                <li>CAFE
-                    <ul class=" list">
-                        <li>Expresso</li>
-                        <li>Lagrima</li>
-                        <li>macchiato</li>
-                        <li>Americano</li>
-                        <li>Latte</li>
-                        <li>Brave</li>
-                        <li>Capuchino</li>
-                        <li>Mocca</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul>
-                <li>COCTELES
-                    <ul class="list">
-                        <li>Daiquiri de fresa</li>
-                        <li>Piña colada</li>
-                        <li>Te negro</li>
-                        <li>Te verde</li>
-                        <li>Fresa mango</li>
-                        <li>Cherry limeade</li>
-                        <li>Limonada de cereza</li>
-                        <li>Dragon Fruit</li>
-                        <li>Yogur de fresa y platano</li>
-                        <li>Limonada de mora</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul>
-                <li>PASTELES
-                    <ul class="list">
-                        <li>Moka</li>
-                        <li>Fresa</li>
-                        <li>Durazno</li>
-                        <li>Marmoleado</li>
-                        <li>Frutos rojos</li>
-                        <li>Oreo</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul>
-                <li>OTROS
-                    <ul class="list">
-                        <li>Ensalada de frutas</li>
-                        <li>Muffin</li>
-                        <li>Tostados J&Q</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+    <main>
 
-        <div class="movi">
-            <h2>Cafe</h2>
-            <div class="cata">
-                <img src="../img/expresso.jpg" alt="Cafe Expresso" class="animacioncata">
-                <h3>CAFÉ EXPRÉS</h3>
-                <p>$*****</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="flex-shrink-0 p-3 cataInicio text-center">
+                        <a href="#"
+                            class="d-flex align-items-center justify-content-center pb-3 mb-3  link-dark text-decoration-none border-bottom">
+
+                            <span class="fs-1 fw-semibold catColor ">CATALOGO</span>
+                        </a>
+                        <ul class="list-unstyled ps-0 ">
+                            <li class="mb-1 ">
+                                <button class=" d-inline-flex align-items-center rounded border-0 collapsed catColor fs-2"
+                                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                                    CAFE
+                                </button>
+                                <div class="collapse show" id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Expresso</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Lagrima</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">macchiato</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Americano</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Latte</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Brave</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Capuchino</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Mocca</a>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <button class=" d-inline-flex align-items-center rounded border-0 collapsed catColor fs-2"
+                                    data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
+                                    aria-expanded="false">
+                                    COCTELES
+                                </button>
+                                <div class="collapse" id="dashboard-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Daiquiri
+                                                de
+                                                fresa</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Piña
+                                                colada</a></li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Monthly</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Annually</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Te
+                                                negro</a></li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Te
+                                                verde</a></li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Fresa
+                                                mango</a></li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Cherry
+                                                limeade</a></li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Limonada
+                                                de
+                                                cereza</a></li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Yogur
+                                                de
+                                                fresa y platano</a></li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Dragon
+                                                Fruit</a></li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Limonada
+                                                de
+                                                mora</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <button class=" d-inline-flex align-items-center rounded border-0 collapsed catColor fs-2"
+                                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                    PASTELES
+                                </button>
+                                <div class="collapse" id="orders-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Moka</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Fresa</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Durazno</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Marmoleado</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Frutos
+                                                rojos</a></li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Oreo</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <button class=" d-inline-flex align-items-center rounded border-0 collapsed catColor fs-2"
+                                    data-bs-toggle="collapse" data-bs-target="#otros-collapse" aria-expanded="false">
+                                    OTROS
+                                </button>
+                                <div class="collapse" id="otros-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Ensalada
+                                                de
+                                                frutas</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">Muffin</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="link-dark d-inline-flex text-decoration-none rounded text-light fs-4">ostados
+                                                J &
+                                                Q</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-xl-12 border-bottom">
+                    <h2>Cafe</h2>
+                </div>
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
+                    <div class="card colCard">
+                        <img src="../img/expresso.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAFÉ EXPRÉS</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/lagrima.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAFÉ LAGRIMA</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6  py-3">
+                    <div class="card  colCard">
+                        <img src="../img/americano.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAFÉ AMERICANO</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
+                    <div class="card colCard">
+                        <img src="../img/macchiato.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAFÉ MACCHIATO</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/latte.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAFÉ LATTE</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
+                    <div class="card colCard">
+                        <img src="../img/moca.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAFÉ MOCA</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/capuchino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAFÉ CAPUCHINO</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/brave.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAFÉ BRAVE</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/cafe-del-dia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAFÉ DEL DIA</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3  ">
+                    <div class="card colCard">
+                        <img src="../img/chocolate-caliente.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CHOCOLATE CALIENTE</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 border-bottom">
+                    <h2>Cocteles</h2>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/daiquiri.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">DAIQUIRI</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/piña-colada.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">PIÑA COLADA</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/te-negro.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TE NEGRO</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
+                    <div class="card colCard">
+                        <img src="../img/te-verde.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TE VERDE</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/fresa-mango.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">FRESA MANGO</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/cherry-limeade.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CHERRY LIMEADE</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/limonada-de-cereza.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">LIMONADA DE CEREZA</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/dragon-fruit.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">DRAGON FRUIT</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/yogur.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">YOGUR</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/limonada-de-mora.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">LIMONADA DE MORA</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/cherry-limeade.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CHERRY LIMEADE</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/cherry-limeade.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CHERRY LIMEADE</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3 ">
+                    <div class="card colCard">
+                        <img src="../img/cherry-limeade.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CHERRY LIMEADE</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$*****</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="cata ">
-                <img src="../img/lagrima.png" alt="Cafe Lagrima" class="animacioncata">
-                <h3>CAFÉ LAGRIMA</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata">
-                <img src="../img/americano.jpg" alt=" Cafe Americano" class="animacioncata">
-                <h3>CAFÉ AMERICANO</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata">
-                <img src="../img/macchiato.jpg" alt="Cafe Macchiato" class="animacioncata">
-                <h3>CAFÉ MACCHIATO</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata ">
-                <img src="../img/latte.jpg" alt="Cafe Latte" class="animacioncata">
-                <h3>CAFÉ LATTE</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata ">
-                <img src="../img/moca.png" alt="Cafe Moca" class="animacioncata">
-                <h3>CAFÉ MOCA</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata">
-                <img src="../img/capuchino.jpg" alt="Cafe Capuchino" class="animacioncata">
-                <h3>CAFÉ CAPUCHINO</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata ">
-                <img src="../img/brave.jpg" alt="Cafe Brave" class="animacioncata">
-                <h3>CAFÉ BRAVE</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata ">
-                <img src="../img/cafe-del-dia.jpg" alt="Cafe del dia" class="animacioncata">
-                <h3>CAFÉ DEL DIA</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata ">
-                <img src="../img/chocolate-caliente.jpg" alt="Chocolate caliente" class="animacioncata">
-                <h3>CHOCOLATE CALIENTE</h3>
-                <p>$*****</p>
+        </div>
+    </main>
+    <div class="container-fluid">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <p class="text-muted">&copy; 2022 Shango Coffe®</p>
             </div>
 
-        </div>
-        <div class="mov2">
-            <h2>Cocteles</h2>
-            <div class="cata">
-                <img src="../img/daiquiri.jpg" alt="daiquiri" class="animacioncata">
-                <h3>DAIQUIRI</h3>
-                <p>$*****</p>
+            <div class="col mb-3">
+
             </div>
-            <div class="cata">
-                <img src="../img/piña-colada.jpg" alt="Piña colada" class="animacioncata">
-                <h3>PIÑA COLADA</h3>
-                <p>$*****</p>
+
+            <div class="col mb-3">
+                <h5>ENCUENTRA UNA TIENDA</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ORDENAR</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ÚNASE A PERKS GRATIS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">UBER COME</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FORMAS DE ORDENAR</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">COMPRAR ONLINE</a></li>
+                </ul>
             </div>
-            <div class="cata">
-                <img src="../img/te-negro.jpg" alt=" Te negro" class="animacioncata">
-                <h3>TE NEGRO</h3>
-                <p>$*****</p>
-            </div >
-            <div class="cata">
-                <img src="../img/te-verde.jpg" alt="Te verde" class="animacioncata">
-                <h3>TE VERDE</h3>
-                <p>$*****</p>
+
+            <div class="col mb-3">
+                <h5>BENEFICIOS</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ÚNASE A PERKS GRATIS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">INICIAR SESIÓN EN
+                            BENEFICIOS</a></li>
+                </ul>
             </div>
-            <div class="cata">
-                <img src="../img/fresa-mango.jpg" alt="Fresa mango" class="animacioncata">
-                <h3>FRESA MANGO</h3>
-                <p>$*****</p>
+
+            <div class="col mb-3">
+                <h5>COMPAÑÍA</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CARRERAS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FRANQUICIAMIENTO</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LICENCIA</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SERVICIO DE COMIDA</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">POLÍTICA DE DEVOLUCIONES</a>
+                    </li>
+                </ul>
             </div>
-            <div class="cata">
-                <img src="../img/cherry-limeade.jpg" alt="Cherry limeade" class="animacioncata">
-                <h3>CHERRY LIMEADE</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata">
-                <img src="../img/limonada-de-cereza.jpg" alt="Limonada de cereza" class="animacioncata">
-                <h3>LIMONADA DE CEREZA</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata">
-                <img src="../img/dragon-fruit.jpg" alt="Dragon fruit" class="animacioncata">
-                <h3>DRAGON FRUIT</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata">
-                <img src=" ../img/yogur.jpg" alt="Yogur" class="animacioncata">
-                <h3>YOGUR</h3>
-                <p>$*****</p>
-            </div>
-            <div class="cata ">
-                <img src="../img/limonada-de-mora.jpg" alt="Limonada de mora" class="animacioncata">
-                <h3>LIMONADA DE MORA</h3>
-                <p>$*****</p>
-            </div>
-        </div>
+        </footer>
     </div>
-</main>
-    <footer class="fooMenu">
-        <div class="footerUno">
-            <div>
-                <ul>
-                    <li>
-                        <h4>ENCUENTRA UNA TIENDA</h4>
-                    </li>
-                    <li>
-                        <h5>ORDENAR</h5>
-                    </li>
-                    <li>COMPRAR ONLINE</li>
-                    <li>UBER COME</li>
-                    <li>FORMAS DE ORDENAR</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>BENEFICIOS</h4>
-                    </li>
-                    <li>ÚNASE A PERKS GRATIS</li>
-                    <li>INICIAR SESIÓN EN BENEFICIOS</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>COMPAÑÍA</h4>
-                    </li>
-                    <li>CARRERAS</li>
-                    <li>FRANQUICIAMIENTO</li>
-                    <li>LICENCIA</li>
-                    <li>SERVICIO DE COMIDA</li>
-                    <li>CAFÉ DE OFICINA</li>
-                    <li>INTERNACIONAL</li>
-                    <li>POLÍTICA DE DEVOLUCIONES</li>
-                    <li>POLITICA DE ENVIOS</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>COMERCIO</h4>
-                    </li>
-                    <li>
-                        <h5>TARJETAS DE REGALO</h5>
-                    </li>
-                    <li>COMPRA UNA TARJETA DE REGALO</li>
-                    <li>CONSULTAR SALDO</li>
-                </ul>
-            </div>
-            <div class="redes">
-                <h4>CONÉCTATE CON NOSOTROS</h4>
 
-                <a href=""><img src="../img/facebook.png" alt="" class="face" /></a>
-                <a href=""><img src="../img/instagram.png" alt="" class="ig" /></a>
-                <a href=""><img src="../img/twitter.png" alt="" class="tw" /></a>
-            </div>
-        </div>
-
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

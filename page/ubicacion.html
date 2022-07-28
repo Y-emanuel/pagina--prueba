@@ -7,31 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shango Coffe®</title>
     <link rel="icon" href="../img/logo.png">
-    <link rel="stylesheet" href="../css/style.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
     <header>
-        <nav class="menuFlex menuPrincipal">
-            <div>
-                <ul class="navPrincipal">
-                    <li class="navHijos">
-                        <h1>Shango Coffe®</h1>
-                    </li>
-                    <li class="navHijos navegador"><input type="search" /></li>
-                    <li><input type="button" value="Buscar" class="navHijos animacionMenu"/></li>
-                    <li class="indx">
-                        <a href="../index.html"><img src="../img/logo.png" alt="inicio" class="imagen" /></a>
-                    </li>
-                    <li><a href="menu.html" class="navHijos nav animacionMenu">Menu</a></li>
-                    <li><a href="ubicacion.html" class="navHijos nav animacionMenu">Ubicacion</a></li>
-                    <li><a href="cuenta.html" class="navHijos nav animacionMenu">Cuenta</a></li>
-                    <li class=" nav menuCarrito"><a href="carrito.html"><img src="../img/carrito-de-compra.png"
-                                alt="carrito de compra" class="imag" /></a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg padMenu">
+            <div class="container-fluid menuColor ">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2 navBuscar " type="search" placeholder="Buscar"
+                            aria-label="Search">
+                        <button class="aniMenu" type="submit">Buscar</button>
+                    </form>
+                    <ul class="navbar-nav  ms-auto  mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link modMenu " aria-current="page" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link modMenu" href="ubicacion.html">Ubicacion</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link modMenu" href="cuenta.html">
+                                Cuenta
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="carrito.html"><img src="../img/carrito-de-compra.png" alt=""
+                                    class="aniCAr"></a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </nav>
-        </div>
     </header>
     <div class="informacionPrincipal">
         <h2>Informacion sobre nosotros</h2>
@@ -52,89 +72,75 @@
             sed eaque. Dolorem, possimus magnam.</p>
     </div>
     <div class="locales">
-        <div>
-            <h2>Locales en:</h2>
-            <ul class="contorno">
-                <li>Mar del plata</li>
-                <li>Santa teresita</li>
-                <li>Palermo</li>
-                <li>Capital</li>
-                <li>Quilmes</li>
-                <li>Avellaneda</li>
-                <li>Flores</li>
-                <li>Villa Gesell</li>
+        <div class="container-fluid">
+            <ul class="row">
+                <li class="col-12"><h2>Locales en:</h2></li>
+                <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6">Mar del plata</li>
+                <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6">Santa teresita</li>
+                <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6">Palermo</li>
+                <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6">Capital</li>
+                <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6">Quilmes</li>
+                <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6">Avellaneda</li>
+                <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6">Flores</li>
+                <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6">Villa Gesell</li>
             </ul>
         </div>
-        <!-- <div class="mapsPadre"> -->
-        <div class="mapsHijo">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201169.28269925909!2d-57.74061839594439!3d-38.01748355645357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1657067716662!5m2!1ses!2sar"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201169.28269925909!2d-57.74061839594439!3d-38.01748355645357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1658966017274!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <!-- </div> -->
     </div>
-    <footer>
-        <div class="footerUno">
-            <div>
-                <ul>
-                    <li>
-                        <h4>ENCUENTRA UNA TIENDA</h4>
-                    </li>
-                    <li>
-                        <h5>ORDENAR</h5>
-                    </li>
-                    <li>COMPRAR ONLINE</li>
-                    <li>UBER COME</li>
-                    <li>FORMAS DE ORDENAR</li>
-                </ul>
+    <div class="container-fluid">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <p class="text-muted">&copy; 2022 Shango Coffe®</p>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>BENEFICIOS</h4>
-                    </li>
-                    <li>ÚNASE A PERKS GRATIS</li>
-                    <li>INICIAR SESIÓN EN BENEFICIOS</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>COMPAÑÍA</h4>
-                    </li>
-                    <li>CARRERAS</li>
-                    <li>FRANQUICIAMIENTO</li>
-                    <li>LICENCIA</li>
-                    <li>SERVICIO DE COMIDA</li>
-                    <li>CAFÉ DE OFICINA</li>
-                    <li>INTERNACIONAL</li>
-                    <li>POLÍTICA DE DEVOLUCIONES</li>
-                    <li>POLITICA DE ENVIOS</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>COMERCIO</h4>
-                    </li>
-                    <li>
-                        <h5>TARJETAS DE REGALO</h5>
-                    </li>
-                    <li>COMPRA UNA TARJETA DE REGALO</li>
-                    <li>CONSULTAR SALDO</li>
-                </ul>
-            </div>
-            <div class="redes">
-                <h4>CONÉCTATE CON NOSOTROS</h4>
 
-                <a href=""><img src="../img/facebook.png" alt="" class="face" /></a>
-                <a href=""><img src="../img/instagram.png" alt="" class="ig" /></a>
-                <a href=""><img src="../img/twitter.png" alt="" class="tw" /></a>
-            </div>
-        </div>
+            <div class="col mb-3">
 
-    </footer>
+            </div>
+
+            <div class="col mb-3">
+                <h5>ENCUENTRA UNA TIENDA</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ORDENAR</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ÚNASE A PERKS GRATIS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">UBER COME</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FORMAS DE ORDENAR</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">COMPRAR ONLINE</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>BENEFICIOS</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ÚNASE A PERKS GRATIS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">INICIAR SESIÓN EN
+                            BENEFICIOS</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>COMPAÑÍA</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CARRERAS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FRANQUICIAMIENTO</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LICENCIA</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SERVICIO DE COMIDA</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">POLÍTICA DE DEVOLUCIONES</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

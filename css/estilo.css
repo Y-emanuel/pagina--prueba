@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Trispace:wght@100&display=swap');
+
+
+
+body {
+    background-color: #cdae98;
+}
+
+ul{
+    list-style: none;
+}
+
+.menuColor {
+    background: linear-gradient(to left, #432818, #967055);
+    outline: #000 .2vw solid;
+
+}
+
+.padMenu {
+    padding: 0;
+}
+
+.modMenu {
+    color: #000;
+    border-radius: 1vw;
+    background-color: #cdae98;
+    font-family: 'Trispace', sans-serif;
+    margin: 1vw;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.modMenu:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.navBuscar {
+    border-radius: 5vh;
+    width: 20vw;
+    background-color: #cdae98;
+    border: none;
+}
+
+.modP, .colCard {
+    background-color: #432818;
+    color: #fff;
+}
+
+.aniMenu{
+    background-color: #cdae98;
+    border-radius: 0.5vw;
+    transition: all 0.5s;
+    border: none;
+}
+
+.aniMenu:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.cataInicio{
+    background-color: #432818;
+}
+
+.catColor{
+    color: #ff4500;
+    background-color: #432818;
+
+}
+
+.imgCat{
+width: 300px;
+}
+
+.informacionPrincipal{
+    margin: 0.5vw;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:400px; 
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.imCuenta{
+    width: 30vw;
+}
+
+.borForm{
+    background-color: #432818;
+    padding: 0.5vw;
+    margin: 0.5vw;
+    color: #fff;
+    border-radius: 2vw;
+}
+
+.pedido{
+    width: 20vw;
+}
+
+.colBottom{
+    border: #000 solid 2px;
+    
+}
+
+
+/* 
+.modP2 {
+    padding: 1vw;
+}
+
+.fonCata{
+    margin: 1vw;
+    border: none;
+    border-radius: 1vw;
+    background-color: #432818;
+}
+
+.fonCata h3, .fonCata p, .fonCata span{
+    border: none;
+    color: #fff;
+}
+
+.fonCata span{
+    background-color: #000;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    padding: 0.2vw;
+}
+
+.face, .ig, .tw{
+    width: 3vw;
+} */

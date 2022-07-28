@@ -7,133 +7,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shango Coffe®</title>
     <link rel="icon" href="../img/logo.png">
-    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
     <header>
-        <nav class="menuFlex menuPrincipal">
-            <div>
-                <ul class="navPrincipal">
-                    <li class="navHijos">
-                        <h1>Shango Coffe®</h1>
-                    </li>
-                    <li class="navHijos navegador"><input type="search" /></li>
-                    <li><input type="button" value="Buscar" class="navHijos animacionMenu"/></li>
-                    <li class="indx">
-                        <a href="../index.html"><img src="../img/logo.png" alt="inicio" class="imagen" /></a>
-                    </li>
-                    <li><a href="menu.html" class="navHijos nav animacionMenu">Menu</a></li>
-                    <li><a href="ubicacion.html" class="navHijos nav animacionMenu">Ubicacion</a></li>
-                    <li><a href="cuenta.html" class="navHijos nav animacionMenu">Cuenta</a></li>
-                    <li class=" nav menuCarrito"><a href="carrito.html"><img src="../img/carrito-de-compra.png"
-                                alt="carrito de compra" class="imag" /></a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg padMenu">
+            <div class="container-fluid menuColor ">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2 navBuscar " type="search" placeholder="Buscar"
+                            aria-label="Search">
+                        <button class="aniMenu" type="submit">Buscar</button>
+                    </form>
+                    <ul class="navbar-nav  ms-auto  mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link modMenu " aria-current="page" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link modMenu" href="ubicacion.html">Ubicacion</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link modMenu" href="cuenta.html">
+                                Cuenta
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="carrito.html"><img src="../img/carrito-de-compra.png" alt=""
+                                    class="aniCAr"></a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </nav>
-        </div>
     </header>
     <main>
-        <div class="formPadre cuentaGrid">
-            <div class="imgGrid">
-                <img src="../img/logo-grande.png" alt="" class="logoCuenta">
-            </div>
-            <div class="formHijo uno fondoUno">
-                <h2>Iniciar Sesion</h2>
-                <form class="flexPadre">
-                        <label for="email1" class="uni">Email</label>
-                        <input type="email" id="email1" class="uni " required=""><br>
-                        <label for="password" class="uni">Contraseña</label>
-                        <input type="password" id="password" class="uni" required=""><br>
-                        <input type="submit" value="Iniciar Sesion" class="uni registro">
-                        <a href="#">¿Olvidaste tu contraseña?</a>
-                </form>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 col-md-12 col-ms-12 ">
+                        <img src="../img/logo-grande.png" alt="" class="imCuenta" >
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-ms-12 py-3">
+                    <form class="row g-3 borForm">
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                            <div class="col-12 py-3">
+                                <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                            </div>
+                    </form>
+                </div>
+            </div>  
+                <div class="col-xl-4 col-md-6 col-ms-12 py-3">
+                    <form class="row g-3 borForm">
+                        <div class="col-md-6">
+                            <label for="Nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="Nombre">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="Apellido">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">direccion</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">direccion 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">ciudad</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">estado</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>soltero...</option>
+                                <option>casado...</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <button type="submit" class="btn btn-primary">Registrarse</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="reset" class="btn btn-primary">Reseteo</button>
+                        </div>
+                    </form>
+                </div>
+
+
 
             </div>
-            <hr class="cuentaHr">
-            <div class="formHijo dos fondoDos">
-                <h2>Registrarse</h2>
-                <form class="flexPadre">
-                    <label for="text1" class="uni">Nombre</label>
-                    <input type="text" required="" id="text1" class="uni "><br>
-                    <label for="text2" class="uni">Apellido</label>
-                    <input type="text" required="" id="text2" class="uni "><br>
-                    <label for="email2" class="uni">Email</label>
-                    <input type="email" required="" id="email2" class="uni "><br>
-                    <label for="password2" class="uni">Contraseña</label>
-                    <input type="password" required="" id="password2" class="uni"><br>
-                    <label for="text3" class="uni">Nombre de usuario</label>
-                    <input type="text" required="" id="text3" class="uni "><br>
-                    <label for="fecha" class="uni mes">Fecha de nacimiento</label>
-                    <input type="month" required="" id="fecha" class="uni">
-                    <input type="submit" required="" class="uni registro" value="Registarse">
-                    <input type="reset" class="uni registro">
-                </form>
-            </div>
         </div>
+
+        <!-- <hr class="cuentaHr">
+        <div class="formHijo dos fondoDos">
+            <h2>Registrarse</h2>
+            <form class="flexPadre">
+                <label for="text1" class="uni">Nombre</label>
+                <input type="text" required="" id="text1" class="uni "><br>
+                <label for="text2" class="uni">Apellido</label>
+                <input type="text" required="" id="text2" class="uni "><br>
+                <label for="email2" class="uni">Email</label>
+                <input type="email" required="" id="email2" class="uni "><br>
+                <label for="password2" class="uni">Contraseña</label>
+                <input type="password" required="" id="password2" class="uni"><br>
+                <label for="text3" class="uni">Nombre de usuario</label>
+                <input type="text" required="" id="text3" class="uni "><br>
+                <label for="fecha" class="uni mes">Fecha de nacimiento</label>
+                <input type="month" required="" id="fecha" class="uni">
+                <input type="submit" required="" class="uni registro" value="Registarse">
+                <input type="reset" class="uni registro">
+            </form>
+        </div>
+        </div> -->
     </main>
-    <footer>
-        <div class="footerUno">
-            <div>
-                <ul>
-                    <li>
-                        <h4>ENCUENTRA UNA TIENDA</h4>
-                    </li>
-                    <li>
-                        <h5>ORDENAR</h5>
-                    </li>
-                    <li>COMPRAR ONLINE</li>
-                    <li>UBER COME</li>
-                    <li>FORMAS DE ORDENAR</li>
-                </ul>
+    <div class="container-fluid">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <p class="text-muted">&copy; 2022 Shango Coffe®</p>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>BENEFICIOS</h4>
-                    </li>
-                    <li>ÚNASE A PERKS GRATIS</li>
-                    <li>INICIAR SESIÓN EN BENEFICIOS</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>COMPAÑÍA</h4>
-                    </li>
-                    <li>CARRERAS</li>
-                    <li>FRANQUICIAMIENTO</li>
-                    <li>LICENCIA</li>
-                    <li>SERVICIO DE COMIDA</li>
-                    <li>CAFÉ DE OFICINA</li>
-                    <li>INTERNACIONAL</li>
-                    <li>POLÍTICA DE DEVOLUCIONES</li>
-                    <li>POLITICA DE ENVIOS</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>COMERCIO</h4>
-                    </li>
-                    <li>
-                        <h5>TARJETAS DE REGALO</h5>
-                    </li>
-                    <li>COMPRA UNA TARJETA DE REGALO</li>
-                    <li>CONSULTAR SALDO</li>
-                </ul>
-            </div>
-            <div class="redes">
-                <h4>CONÉCTATE CON NOSOTROS</h4>
 
-                <a href=""><img src="../img/facebook.png" alt="" class="face" /></a>
-                <a href=""><img src="../img/instagram.png" alt="" class="ig" /></a>
-                <a href=""><img src="../img/twitter.png" alt="" class="tw" /></a>
+            <div class="col mb-3">
+
             </div>
-        </div>
 
-    </footer>
+            <div class="col mb-3">
+                <h5>ENCUENTRA UNA TIENDA</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ORDENAR</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ÚNASE A PERKS GRATIS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">UBER COME</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FORMAS DE ORDENAR</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">COMPRAR ONLINE</a></li>
+                </ul>
+            </div>
 
+            <div class="col mb-3">
+                <h5>BENEFICIOS</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ÚNASE A PERKS GRATIS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">INICIAR SESIÓN EN
+                            BENEFICIOS</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>COMPAÑÍA</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CARRERAS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FRANQUICIAMIENTO</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LICENCIA</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SERVICIO DE COMIDA</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">POLÍTICA DE DEVOLUCIONES</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
