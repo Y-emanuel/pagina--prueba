@@ -11,7 +11,7 @@ ul{
 }
 
 .menuColor {
-    background: linear-gradient(to left, #432818, #967055);
+    background: linear-gradient(to left, #967055 , #432818);
     outline: #000 .2vw solid;
 
 }
@@ -109,8 +109,7 @@ width: 300px;
 }
 
 .colBottom{
-    border: #000 solid 2px;
-    
+    background-color: #cdae98;
 }
 
 
@@ -125,10 +124,18 @@ width: 300px;
         width: 35vw;
     }
 
+    .navBuscar{
+        width: 35vw;
+    }
+
 }
 
 @media (max-width:550px) {
     .imCuenta{
         width: 60vw;
     }
+    .navBuscar{
+        width: 40vw;
+    }
+
 }
