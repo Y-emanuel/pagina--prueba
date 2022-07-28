@@ -12,13 +12,15 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/estilo.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg padMenu">
             <div class="container-fluid menuColor ">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt=""></a>
+                <a class="navbar-brand " href="../index.html"><img src="../img/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -55,8 +57,8 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-4 col-md-12 col-ms-12 ">
-                        <img src="../img/logo-grande.png" alt="" class="imCuenta" >
+                <div class="col-xl-4 col-md-12 col-ms-12  ">
+                    <img src="../img/logo-grande.png" alt="" class="imCuenta d-flex justify-content-center animate__animated animate__bounce">
                 </div>
 
                 <div class="col-xl-4 col-md-6 col-ms-12 py-3">
@@ -73,80 +75,60 @@
                             </div>
                     </form>
                 </div>
-            </div>  
-                <div class="col-xl-4 col-md-6 col-ms-12 py-3">
-                    <form class="row g-3 borForm">
-                        <div class="col-md-6">
-                            <label for="Nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="Nombre">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="Apellido" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="Apellido">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputPassword4" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress" class="form-label">direccion</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress2" class="form-label">direccion 2</label>
-                            <input type="text" class="form-control" id="inputAddress2"
-                                placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">ciudad</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col-md-4">
-                            <label for="inputState" class="form-label">estado</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>soltero...</option>
-                                <option>casado...</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                            <button type="submit" class="btn btn-primary">Registrarse</button>
-                        </div>
-                        <div class="col-6">
-                            <button type="reset" class="btn btn-primary">Reseteo</button>
-                        </div>
-                    </form>
-                </div>
-
-
-
             </div>
-        </div>
+            <div class="col-xl-4 col-md-6 col-ms-12 py-3">
+                <form class="row g-3 borForm">
+                    <div class="col-md-6">
+                        <label for="Nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name"
+                            id="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"
+                            id="Apellido">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">direccion</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">direccion 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">ciudad</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">estado</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>soltero...</option>
+                            <option>casado...</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="reset" class="btn btn-primary">Reseteo</button>
+                    </div>
+                </form>
+            </div>
 
-        <!-- <hr class="cuentaHr">
-        <div class="formHijo dos fondoDos">
-            <h2>Registrarse</h2>
-            <form class="flexPadre">
-                <label for="text1" class="uni">Nombre</label>
-                <input type="text" required="" id="text1" class="uni "><br>
-                <label for="text2" class="uni">Apellido</label>
-                <input type="text" required="" id="text2" class="uni "><br>
-                <label for="email2" class="uni">Email</label>
-                <input type="email" required="" id="email2" class="uni "><br>
-                <label for="password2" class="uni">Contraseña</label>
-                <input type="password" required="" id="password2" class="uni"><br>
-                <label for="text3" class="uni">Nombre de usuario</label>
-                <input type="text" required="" id="text3" class="uni "><br>
-                <label for="fecha" class="uni mes">Fecha de nacimiento</label>
-                <input type="month" required="" id="fecha" class="uni">
-                <input type="submit" required="" class="uni registro" value="Registarse">
-                <input type="reset" class="uni registro">
-            </form>
+
+
         </div>
-        </div> -->
+        </div>
     </main>
     <div class="container-fluid">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
