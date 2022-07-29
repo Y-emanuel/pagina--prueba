@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Trispace:wght@100&display=swap');
+
+
+@import "variables";
+@import "header";
+
+body {
+    background-color: $color-fondo;
+
+    ul {
+        list-style: none;
+    }
+
+
+}
+
+.modP {
+    background-color: $color-catalogo;
+    color: #fff;
+}
+
+
+
+.cataInicio {
+    background-color: $color-catalogo;
+
+    .catColor {
+        color: #ff4500;
+        background-color: $color-catalogo;
+
+    }
+
+
+}
+
+.informacionPrincipal {
+    margin: $tamaño-width;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 400px;
+    position: relative;
+    height: 0;
+
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+
+
+.imCuenta {
+    width: 30vw;
+}
+
+.borForm {
+    background-color: $color-catalogo;
+    padding: $tamaño-width;
+    margin: $tamaño-width;
+    color: #fff;
+    border-radius: 2vw;
+}
+
+.pedido {
+    width: 20vw;
+}
+
+@media (max-width:1199px) {
+    .imCuenta {
+        position: relative;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 35vw;
+    }
+
+    .navBuscar {
+        width: 35vw;
+    }
+
+}
+
+@media (max-width:550px) {
+    .imCuenta {
+        width: 60vw;
+    }
+
+    .navBuscar {
+        width: 40vw;
+    }
+
+}

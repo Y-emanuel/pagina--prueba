@@ -1,0 +1,55 @@
+// Menu principal
+
+.padMenu {
+    padding: 0;
+
+    .menuColor {
+        background: linear-gradient(to left, $color-secundario, $colo-primerio);
+        outline: #000 .2vw solid;
+
+    }
+
+    .colBottom {
+        background-color: $color-fondo;
+    }
+
+    .modMenu {
+        color: #000;
+        border-radius: 1vw;
+        background-color: $color-fondo;
+        font-family: 'Trispace', sans-serif;
+        margin: 1vw;
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+
+
+    .navBuscar {
+        border-radius: 5vh;
+        width: 20vw;
+        background-color: $color-fondo;
+        border: none;
+    }
+
+    .aniMenu {
+        background-color: $color-fondo;
+        border-radius: $tamaño-width;
+        transition: all 0.5s;
+        border: none;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+
+
+}
