@@ -32,6 +32,35 @@
       background-color: #000;
       color: #fff; }
 
+.fondo {
+  color: #15305F; }
+
+.paletaDeColor {
+  color: #7CC581; }
+
+.menuColorMod {
+  color: #500F57; }
+
+.colorMod {
+  background-color: #B739C4;
+  font-size: 30px; }
+
+.estiloUno, .estiloDos {
+  font-family: 'roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 1.2vw; }
+
+.estiloDos {
+  border: 2px solid black;
+  padding: 0.5vw;
+  background-color: bisque; }
+
+.luColorMod {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2vw;
+  background-color: aquamarine;
+  color: black; }
+
 body {
   background-color: #cdae98; }
   body ul {

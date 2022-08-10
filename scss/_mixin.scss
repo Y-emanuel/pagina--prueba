@@ -1,0 +1,12 @@
+@mixin lugaresDisponibles {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+    background-color: aquamarine;
+    color: black;
+    
+}
+
+.luColorMod{
+    @include lugaresDisponibles;
+
+}

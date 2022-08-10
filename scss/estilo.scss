@@ -3,6 +3,9 @@
 
 @import "variables";
 @import "header";
+@import "maps";
+@import "extend";
+@import "mixin";
 
 body {
     background-color: $color-fondo;

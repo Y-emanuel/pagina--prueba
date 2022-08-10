@@ -1,0 +1,14 @@
+
+
+.estiloUno{
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
+
+.estiloDos{
+    @extend .estiloUno;
+    border: 2px solid black;
+    padding: 0.5vw;
+    background-color: bisque;
+}
