@@ -1,207 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shango Coffee® es más que una cafetería premium que ofrece bebidas y alimentos artesanales de alta calidad. Explora nuestro menú, regístrate en Shango Coffee®...">
-  <meta name="keywords" content="cafe, cafeteria, cocteles, sinalcohol, te ">
-  <title>Shango Coffe®</title>
-  <link rel="icon" href="img/logo.png" />
-
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="css/estilo.css">
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/04c359619c.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg padMenu">
-      <div class="container-fluid menuColor ">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Shango Coffee®"></a>
-        <button class="navbar-toggler colBottom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon  "></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <form class="d-flex ms-auto" role="search">
-            <input class="form-control me-2 navBuscar " type="search" placeholder="Buscar" aria-label="Search">
-            <button class="aniMenu" type="submit">Buscar</button>
-          </form>
-          <ul class="navbar-nav  ms-auto  mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link modMenu " aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link modMenu " aria-current="page" href="page/menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link modMenu" href="page/ubicacion.html">Ubicacion</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link modMenu" href="page/cuenta.html">
-                Cuenta
-              </a>
-            </li>
-            <li>
-              <a class="nav-link" href="page/carrito.html"><img src="img/carrito-de-compra.png" alt="carrito de compra"
-                  class="aniCAr"></a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <div class="container col-xxl-8 px-4 py-5 border-bottom">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-xl-6 col-sm-12 col-lg-6 col-md-12">
-            <img src="img/portada-cafeteria.png" class="d-block mx-lg-auto img-fluid animate__animated animate__backInRight" alt="Bootstrap Themes" width="700"
-              height="500" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3 animate__animated animate__backInRight">Bienvenidos a Shango Coffe®</h1>
-            <p class="lead animate__animated animate__backInRight"> Visite Shango Coffee® para disfrutar de deliciosas bebidas artesanales
-              para el desayuno durante todo el día. Además, no olvide abastecerse de
-              nuestros granos de café tostados en lotes pequeños y ver nuestras
-              ofertas por tiempo limitado.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 animate__animated animate__backInRight">Ofertas semanales</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4 animate__animated animate__backInRight">Ofertas del dia</button>
+    <a href="#" id="subir"></a>
+    <header class="inicio">
+        <img src="img/portada-cafeteria.png" alt="Portada de cafeteria Shango Coffee®" class="inicio__img">
+        <section class="bienvenida">
+            <img src="img/logo.png" alt="Logo de Shango Coffee®" class="bienvenida__img">
+            <h1 class="bienvenida__h1">Bienvenidos a Shango Coffe®</h1>
+            <p class="bienvenida__p">Visite Shango Coffee® para disfrutar de deliciosas bebidas artesanales para el desayuno durante todo el día. Además, no olvide abastecerse de nuestros granos de café tostados en lotes pequeños y ver nuestras ofertas por tiempo limitado.</p>
+            <div class="bienvenida__div">
+                <input type="button" value="Ofertas semanales" class="bienvenida__div-input">
+                <input type="button" value="Ofertas del dia" class="bienvenida__div-input--active">
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container-fluid ">
-        <div class="row ">
-          <div class="col-xl-4 col-md-6 col-sm-12 py-2">
-            <div class="card modP">
-              <img src="img/cocteles.jpg" class="card-img-top" alt="cocteles sin alcohol">
-              <div class="card-body">
+        </section>
+        <nav class="navegador-inicio">
+            <ul class="navegador-inicio__ul">
+                <li ><a href="#" class="navegador-inicio__ul-li">HOME</a></li>
+                <li ><a href="#" class="navegador-inicio__ul-li">MENU</a></li>
+                <li ><h2 class="navegador-inicio__ul-li--active">Shango Coffe®</h2></li>
+                <li ><a href="#" class="navegador-inicio__ul-li">LOCATION</a></li>
+                <li ><a href="#" class="navegador-inicio__ul-li">ACCOUNT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="menu">
+            <article class="menu__article">
+                <img src="img/cocteles.jpg" alt="Cocteles">
                 <h3>Coctel sin alcohol</h3>
-                <p class="card-text">Una bebida sin alcohol o sin alcohol, también conocida como bebida de templanza, es una versión de una bebida alcohólica hecha sin alcohol, o con el alcohol eliminado o reducido a casi cero.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 py-2">
-            <div class="card modP">
-              <img src="img/pastel.jpg" class="card-img-top" alt="Pastel">
-              <div class="card-body">
+                <p>Una bebida sin alcohol o sin alcohol, también conocida como bebida de templanza, es una versión de una bebida alcohólica hecha sin alcohol, o con el alcohol eliminado o reducido a casi cero.</p>
+            </article>
+            <article class="menu__article">
+                <img src="img/pastel.jpg" alt="Pastel">
                 <h3>Pastel</h3>
-                <p class="card-text">Dulce elaborado con una masa a base de harina, mantequilla, huevos, azúcar, leche, y otros ingredientes, que se cuece al horno y se rellena o se cubre de crema, chocolate, frutas u otros productos de repostería.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 py-2">
-            <div class="card modP">
-              <img src="img/frutas.jpg" class="card-img-top" alt="Ensalada de frutas">
-              <div class="card-body">
+                <p>Dulce elaborado con una masa a base de harina, mantequilla, huevos, azúcar, leche, y otros ingredientes, que se cuece al horno y se rellena o se cubre de crema, chocolate, frutas u otros productos de repostería.</p>
+            </article>
+            <article class="menu__article">
+                <img src="img/frutas.jpg" alt="frutas">
                 <h3>Mix frutal</h3>
-                <p class="card-text">La macedonia de frutas es una mezcla de variadas frutas cortadas en trozos pequeños, aderezada con azúcar, licor o zumo de frutas, muy típica en algunos países donde se toma como postre.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 py-2">
-            <div class="card modP">
-              <img src="img/tostados.jpg" class="card-img-top" alt="Tostados">
-              <div class="card-body">
+                <p>La macedonia de frutas es una mezcla de variadas frutas cortadas en trozos pequeños, aderezada con azúcar, licor o zumo de frutas, muy típica en algunos países donde se toma como postre.</p>
+            </article>
+            <article class="menu__article">
+                <img src="img/tostados.jpg" alt="Tostados">
                 <h3>Tostados</h3>
-                <p class="card-text">Un tostado es un sándwich de miga que se tuesta hasta que sus tapas de miga queden doradas y crocantes. Es típico de la gastronomía argentina y uruguaya.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 py-2">
-            <div class="card modP">
-              <img src="img/mofin.jpg" class="card-img-top" alt="Muffin">
-              <div class="card-body">
+                <p>Un tostado es un sándwich de miga que se tuesta hasta que sus tapas de miga queden doradas y crocantes. Es típico de la gastronomía argentina y uruguaya.</p>
+            </article>
+            <article class="menu__article">
+                <img src="img/mofin.jpg" alt="Mofin">
                 <h3>Muffin</h3>
-                <p class="card-text">Un panecillo húmedo y tierno, relleno de dulce de leche con la dulce textura espojosa</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 py-2">
-            <div class="card modP">
-              <img src="img/cafe.jpg" class="card-img-top" alt="Cafe">
-              <div class="card-body">
+                <p>Un panecillo húmedo y tierno, relleno de dulce de leche con la dulce textura espojosa</p>
+            </article>
+            <article class="menu__article">
+                <img src="img/cafe.jpg" alt="Cafe">
                 <h3>Cafe</h3>
-                <p class="card-text">El café es la bebida que se obtiene a partir de los granos tostados, es altamente estimulante por su contenido de cafeína, ​ una sustancia psicoactiva.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-              <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap" />
-              </svg>
-            </a>
-            <p class="text-muted">&copy; 2022 Shango Coffe®</p>
-          </div>
-
-          <div class="col mb-3">
-
-          </div>
-
-          <div class="col mb-3">
-            <h5>ENCUENTRA UNA TIENDA</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ORDENAR</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ÚNASE A PERKS GRATIS</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">UBER COME</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FORMAS DE ORDENAR</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">COMPRAR ONLINE</a></li>
-            </ul>
-          </div>
-
-          <div class="col mb-3">
-            <h5>BENEFICIOS</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ÚNASE A PERKS GRATIS</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">INICIAR SESIÓN EN BENEFICIOS</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col mb-3">
-            <h5>COMPAÑÍA</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CARRERAS</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FRANQUICIAMIENTO</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LICENCIA</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SERVICIO DE COMIDA</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">POLÍTICA DE DEVOLUCIONES</a></li>
-            </ul>
-          </div>
-        </footer>
-      </div>
-
-      <!-- JavaScript Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-
+                <p>El café es la bebida que se obtiene a partir de los granos tostados, es altamente estimulante por su contenido de cafeína, una sustancia psicoactiva.</p>
+            </article>
+        </section>
+    </main>
+    <footer class="creditos">
+        <a href="#subir" ><i class="fa-solid fa-arrow-up fa-2xl flecha"></i></i></a>
+        <p>© 2022 <span>Shango Coffe®</span>  Creado por Emanuel-<span>Code</span></p>
+    </footer>
+    
 </body>
-
 </html>
